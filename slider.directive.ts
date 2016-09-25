@@ -15,7 +15,7 @@ import * as Hammer from 'hammerjs'
  * [reference] HTML element to be used as a boundary reference
  * [start] Offset in pixels of the start slider area
  * [end] Offset in pixels of the end slider area
- * [vertical] Set to true
+ * [vertical] Set to true to put the slider in vertical mode
  *
  * # Events
  * (slide) Emits the latest position when dragging
@@ -37,8 +37,6 @@ export class SliderDirective implements OnInit, OnDestroy {
   sliderStart: number
   sliderEnd: number
   sliderSize: number
-
-  cancelNextPan = false
 
   private target: HTMLElement
   private handler: HammerManager
